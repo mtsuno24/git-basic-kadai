@@ -1,0 +1,28 @@
+PS C:\Users\patap> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\patap
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        2024/11/20     12:42                git_challenge
+
+
+PS C:\Users\patap> cd git_challenge
+PS C:\Users\patap\git_challenge> git init
+Initialized empty Git repository in C:/Users/patap/git_challenge/.git/
+PS C:\Users\patap\git_challenge> echo "Hello, World!" >> hello_world.txt
+PS C:\Users\patap\git_challenge> git add hello_world.txt
+PS C:\Users\patap\git_challenge> git commit -m "hello_world.txtを追加"
+[main (root-commit) b118633] hello_world.txtを追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\patap\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\patap\git_challenge> git add hello_world.txt
+PS C:\Users\patap\git_challenge> git commit -m "和文を追加"
+[main 6dc1504] 和文を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\patap\git_challenge> git log --oneline
+6dc1504 (HEAD -> main) 和文を追加
+b118633 hello_world.txtを追加
